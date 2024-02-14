@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import * as Updates from 'expo-updates';
+Updates.reloadAsync()
 
 export default function App() {
   const [goalText, setGoalText] = useState("")
